@@ -1,0 +1,51 @@
+({
+			
+   esconderImagem1 : function(component) {
+        var esconder1 = component.get("v.esconder1");
+        
+        if(esconder1 == true){
+            component.set("v.esconder1", false);
+        }else if(esconder1 == false){
+            component.set("v.esconder1", true);
+        }
+   },
+			
+    esconderImagem2 : function(component) {
+        var esconder2 = component.get("v.esconder2");
+        
+        if(esconder2 == true){
+            component.set("v.esconder2", false);
+        }else if(esconder2 == false){
+            component.set("v.esconder2", true);
+        }
+		
+    },
+ 		
+    esconderImagem3 : function(component) {
+        var esconder3 = component.get("v.esconder3");
+        
+        if(esconder3 == true){
+            component.set("v.esconder3", false);
+        }else if(esconder3 == false){
+            component.set("v.esconder3", true);
+        }
+		
+    },
+      esconderImagem4 : function(component) {
+        var esconder4 = component.get("v.esconder4");
+        
+        if(esconder4 == true){
+            component.set("v.esconder1", false);
+            component.set("v.esconder2", false);
+            component.set("v.esconder3", false);
+            component.set("v.esconder4", false);
+            
+        }else if(esconder4 == false){
+            component.set("v.esconder1", true);
+            component.set("v.esconder2", true);
+            component.set("v.esconder3", true);
+            component.set("v.esconder4", true);
+        }
+		
+    }
+})
