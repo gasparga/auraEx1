@@ -1,0 +1,18 @@
+({
+    handleClick1 : function(component, event, helper) {
+        helper.esconderImagem1(component);     
+	},
+ 	
+
+    handleClick2 : function(component, event, helper) {
+        helper.esconderImagem2(component);     
+	},
+ 	
+    handleClick3 : function(component, event, helper) {
+        helper.esconderImagem3(component);     
+	},
+      handleClick4 : function(component, event, helper) {
+        helper.esconderImagem4(component);     
+	}
+ 	
+})
