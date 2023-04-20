@@ -1,0 +1,28 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+      
+    
+  <lightning:button variant="brand" label="Gastly" title="Brand action" onclick="{! c.handleClick1}" />
+  <aura:attribute name="esconder1" type="boolean" default="true" description="true or False"></aura:attribute>   
+    <aura:if isTrue="{!v.esconder1}">
+    <img src="{!$Resource.gastly}"/>
+    </aura:if>
+   
+  <lightning:button variant="brand" label="Haunter" title="Brand action" onclick="{! c.handleClick2}" />  
+  <aura:attribute name="esconder2" type="boolean" default="true" description="true or False"></aura:attribute>
+    <aura:if isTrue="{!v.esconder2}">
+    <img src="{!$Resource.haunter}"/>
+    </aura:if>
+    
+  <lightning:button variant="brand" label="Gengar" title="Brand action" onclick="{! c.handleClick3}" />  
+  <aura:attribute name="esconder3" type="boolean" default="true" description="true or False"></aura:attribute> 
+    <aura:if isTrue="{!v.esconder3}">
+    <img src="{!$Resource.gengar}"/>
+    </aura:if>
+  
+   <lightning:button variant="brand" label="Todos" title="Brand action" onclick="{! c.handleClick4}" />  
+  <aura:attribute name="esconder4" type="boolean" default="false" description="true or False"></aura:attribute> 
+  
+        
+    
+</aura:component>
